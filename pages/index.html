@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>MAN <em>with</em> VAN</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+
+<header>
+  <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="manvan" href="#featured"><h1><strong>MAN</strong> <em>with</em> <strong>VAN</strong></h1>  <h1></h1></a>
+      </div><!-- navbar-header -->
+      <div class="collapse navbar-collapse" id="collapse">
+        <ul class="nav navbar-nav navbar-right">
+          <li class="active"><a href="index.php"><?php if(!isset($_GET['route']) || $_GET['route']=="home"){echo "class=\"selected\"";} ?>Home</a></li>
+          <li><a href="#mission">Home Removals</a></li>
+          <li><a href="#services">Office Removals</a></li>
+          <li><a href="#staff">Storage</a></li>
+          <li><a href="#testimonials">Moving Quote</a></li>
+            <li><a href="#testimonials">Contact Us</a></li>
+        </ul>        
+      </div><!-- collapse navbar-collapse -->
+    </div><!-- container -->
+  </nav>
+</header><!-- HEADER -->
+
+<div class="container-fluid">
+<?php include($file); ?>
+</div>
+
+
+<footer>
+  <div class="content container-fluid">
+    <div class="row">
+      <div class="col-sm-6">
+        <p>Call us toll-free at <span class="phone">020 8226 4440</span></p>
+        <p>All contents &copy; 2014 <a href="#">24 Removals</a>. All rights reserved.</p>    
+      </div><!-- col-sm-6 -->
+      <div class="col-sm-6">
+        <nav class="navbar navbar-default" role="navigation">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#">Packing Tips </a></li>
+            <li>|</li>
+            <li><a href="#">Home Removal</a></li>
+            <li>|</li>
+             <li><a href="#">Office Removals</a></li>
+            <li>|</li>
+            <li><a href="#">Storage</a></li>
+          </ul>
+        </nav>        
+      </div><!-- col-sm-6 -->
+    </div><!-- row -->
+  </div><!-- content container -->
+</footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+<script src="js/myscript.js"></script>
+</body>
+</html>
